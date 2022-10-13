@@ -6,13 +6,12 @@ if ($_POST) {
 
         $nombre = $_POST['nombre'];
         $precio = $_POST['precio'];
-        $foto = $_POST['foto'];
 
         $objConexion = new conexion();
-        $sql = "INSERT INTO `producto` (`id`, `nombre`, `precio`, `foto`) VALUES (NULL, '$nombre', '$precio', '$foto')";
+        $sql = "INSERT INTO `producto` (`id`, `nombre`, `precio`) VALUES (NULL, '$nombre', '$precio')";
         $objConexion->ejecutar($sql);
 
-        echo "<script>location.href='https://frutera-proyecto.herokuapp.com/'</script>";
+        echo "<script>location.href='index.php'</script>";
         
     }
 
@@ -29,7 +28,7 @@ if ($_POST) {
         $sql = "INSERT INTO `oferta` (`id_oferta`, `nombre`, `descuento`, `id_producto`) VALUES (NULL, '$nombre', '$total', '$id')";
         $objConexion->ejecutar($sql);
 
-        echo "<script>location.href='https://frutera-proyecto.herokuapp.com/'</script>";
+        echo "<script>location.href='index.php'</script>";
         
     }
 
