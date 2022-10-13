@@ -2,15 +2,15 @@
 
 class conexion {
 
-    private $servidor="localhost";
-    private $usuario="root";
-    private $contrasenia="";
+    private $servidor="b3kv6aqvwmi0rrhyy0wf-mysql.services.clever-cloud.com";
+    private $usuario="uxmzb3iyhjukului";
+    private $contrasenia="cJuOVcSWgM5ZsrbHABwJ";
     private $conexion;
 
     public function __construct() {
 
         try {
-            $this->conexion = new PDO("mysql:host=$this->servidor;dbname=base1", $this->usuario, $this->contrasenia);
+            $this->conexion = new PDO("mysql:host=$this->servidor;dbname=b3kv6aqvwmi0rrhyy0wf", $this->usuario, $this->contrasenia);
             $this->conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         }
         catch (PDOException $e){
