@@ -4,7 +4,7 @@
             <h1>Registrar productos</h1>
         </div>
         <div class="card-body">
-            <form action="index.php" method="post">
+            <form action="https://frutera-proyecto.herokuapp.com/" method="post">
                 <div class="form-group">
                     <label for="inputEmail">Nombre</label>
                     <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre del producto">
@@ -22,7 +22,7 @@
         </div>
         <div class="card-footer">
 
-            <form action="index.php" method="post">
+            <form action="https://frutera-proyecto.herokuapp.com/" method="post">
                 <input type="hidden" name="id_producto" value="<?php if (isset($codigo)) { echo $codigo; } ?>">
                 <div class="form-group">
                     <label for="nombre">Nombre del producto</label>

@@ -12,7 +12,7 @@ if ($_POST) {
         $sql = "INSERT INTO `producto` (`id`, `nombre`, `precio`, `foto`) VALUES (NULL, '$nombre', '$precio', '$foto')";
         $objConexion->ejecutar($sql);
 
-        echo "<script>location.href='index.php'</script>";
+        echo "<script>location.href='https://frutera-proyecto.herokuapp.com/'</script>";
         
     }
 
@@ -29,7 +29,7 @@ if ($_POST) {
         $sql = "INSERT INTO `oferta` (`id_oferta`, `nombre`, `descuento`, `id_producto`) VALUES (NULL, '$nombre', '$total', '$id')";
         $objConexion->ejecutar($sql);
 
-        echo "<script>location.href='index.php'</script>";
+        echo "<script>location.href='https://frutera-proyecto.herokuapp.com/'</script>";
         
     }
 
